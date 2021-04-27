@@ -1,11 +1,9 @@
-console.log('client side js has been loaded');
-
 const weatherForm = document.querySelector('form');
 const weatherSearchInput = document.querySelector('input');
 const messageOne = document.querySelector('#message-1');
 const messageTwo = document.querySelector('#message-2');
 
-weatherForm.eddEventListener('submit', (e) => {
+weatherForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
     const location = weatherSearchInput.value;
