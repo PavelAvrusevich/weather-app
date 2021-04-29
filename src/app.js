@@ -45,7 +45,7 @@ app.get('/about', (req, res) => {
 app.get('/weather', (req, res) => {
     if (!req.query.address) {
         return res.send({
-            error: "Location hasn't been provided",
+            err: "Location hasn't been provided",
         });
     }
 
